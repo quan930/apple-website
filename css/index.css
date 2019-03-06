@@ -1,0 +1,34 @@
+.fot{
+    background-color: #F2F2F2;
+}
+.font{
+    font-size:10%;
+    padding: 5px;
+    text-align: center;
+}
+.navigation{
+    height: 60px;
+}
+.background{
+    height: 100%;
+    background-color: #FAFAFA;
+    padding: 30px;
+    text-align: center;
+}
+h2{
+    font-size: 160%;
+}
+span{
+    padding: 0px 60px;
+    font-size: 10%;
+}
+.dividerBackground{
+    height: 10px;
+    background-color: #ffffff;
+}
+.show{
+    padding : 5px;
+}
+.height{
+    height: 500px;
+}

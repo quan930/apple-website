@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- import Vue before Element -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- import JavaScript -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</head>
+<body>
+<div id="app">
+    <el-row>
+        <el-col class="navigation" :span="24">
+            <el-row class="navigation" style="background-color: #323232">
+                <el-col :xs="0" :sm="2" :md="4" :lg="5"><div>&nbsp;</div></el-col>
+                <el-col :xs="24" :sm="20" :md="16" :lg="14">
+                    <div>
+                        <el-menu
+                                :default-active="activeIndex2"
+                                class="el-menu-demo"
+                                mode="horizontal"
+                                @select="handleSelect"
+                                background-color="#323232"
+                                text-color="#fff"
+                                active-text-color="#323232">
+                            <el-row>
+                                <el-col :span="4"><el-menu-item class="font" index="1">Mac</el-menu-item></el-col>
+                                <el-col :span="4"><el-menu-item class="font" index="2">iPad</el-menu-item></el-col>
+                                <el-col :span="4"><el-menu-item class="font" index="3">iPhone</el-menu-item></el-col>
+                                <el-col :span="4"><el-menu-item class="font" index="4">Watch</el-menu-item></el-col>
+                                <el-col :span="4"><el-menu-item class="font" index="5">Music</el-menu-item></el-col>
+                                <el-col :span="4"><el-menu-item class="font" index="6">技术支持</el-menu-item></el-col>
+                            </el-row>
+                        </el-menu>
+                    </div>
+                </el-col>
+            </el-row>
+        </el-col>
+        <el-col :span="24">
+            <div class="background">
+                <el-row>
+                    <el-col :xs="0" :sm="2" :md="4" :lg="5"><div>&nbsp;</div></el-col>
+                    <el-col :xs="24" :sm="20" :md="16" :lg="14">
+                        <h2>折抵换购 iPhone XR 仅 RMB 183/月起，或 RMB 4399 起*。</h2>
+                        <span>前往 Apple Store 零售店，将你现有的 iPhone 升级换购</span><br>
+                        <span>成 iPhone XR，时机正好。</span><br>
+                        <span><a href="#">进一步了解 > </a></span>
+                    </el-col>
+                </el-row>
+            </div>
+        </el-col>
+        <el-col :span="24"><div class="dividerBackground"></div></el-col>
+        <el-col :span="24">
+            <div class="background">
+                <el-row>
+                    <el-col :xs="0" :sm="2" :md="4" :lg="5"><div>&nbsp;</div></el-col>
+                    <el-col :xs="24" :sm="20" :md="16" :lg="14">
+                        <div>
+                            <h2>iPhone X R</h2>
+                            <span>全面屏设计，iPhone 上最强的电池续航，出类拔萃的性能，</span><br>
+                            <span>以及影棚质感的照片效果。</span><br>
+                            <span><a href="#">进一步了解 > </a>&nbsp;<a href="#">购买 > </a></span>
+                            <img style="width: 100%" src="image/x-r.jpg">
+                        </div>
+                    </el-col>
+                </el-row>
+            </div>
+        </el-col>
+        <el-col :span="24"><div class="dividerBackground"></div></el-col>
+        <el-col :span="24">
+            <div class="background">
+                <el-row>
+                    <el-col :xs="0" :sm="2" :md="4" :lg="5"><div>&nbsp;</div></el-col>
+                    <el-col :xs="24" :sm="20" :md="16" :lg="14">
+                        <div>
+                            <h2>iPhone XS</h2>
+                            <span>iPhone 上最大的超视网膜显示屏，性能出类拔萃的 A12 仿生，</span><br>
+                            <span>安全性更进一步的面容 ID，以及支持景深控制的突破性双镜头系统。</span><br>
+                            <span><a href="#">进一步了解 > </a>&nbsp;<a href="#">购买 > </a></span>
+                            <img style="width: 100%" src="image/x-s.jpg">
+                        </div>
+                    </el-col>
+                </el-row>
+            </div>
+        </el-col>
+        <el-col :span="24"><div class="dividerBackground"></div></el-col>
+        <el-col :span="24">
+            <div class="background">
+                <el-row>
+                    <el-col :xs="0" :sm="2" :md="4" :lg="5"><div>&nbsp;</div></el-col>
+                    <el-col :xs="24" :sm="20" :md="16" :lg="14">
+                        <div>
+                            <h2>MacBook Air</h2>
+                            <span>轻轻地，再次倾心。</span><br>
+                            <span><a href="#">进一步了解 > </a>&nbsp;<a href="#">购买 > </a></span>
+                            <img style="width: 100%" src="image/mac-air.jpg">
+                        </div>
+                    </el-col>
+                </el-row>
+            </div>
+        </el-col>
+        <el-col :span="24"><div style="height: 5px" class="dividerBackground"></div></el-col>
+    </el-row>
+    <el-row :gutter="20">
+        <el-col class="show" :xs="24" :sm="24" :md="12" :lg="12">
+            <div class="background height">
+                <div style="height: 30%">
+                    <img style="height: 50%" src="image/word.jpg"><br>
+                    <span>中国移动</span><br>
+                    <span>现已提供蜂窝网络服务。</span><br>
+                    <span><a href="#">进一步了解 > </a>&nbsp;<a href="#">购买 > </a></span>
+                </div>
+                <div style="position:relative;height: 70%">
+
+                    <div style="width:100%;position:absolute; bottom:0; text-align:center;">
+                        <img style="max-height:300px;width: 80%" src="image/watch.jpg">
+                    </div>
+                </div>
+            </div>
+        </el-col>
+        <el-col class="show" :xs="24" :sm="24" :md="12" :lg="12">
+            <div style="background:url(image/photography.jpg);background-repeat:no-repeat;background-size: 100% 100%;color: white;" class="background height back">
+                <h2>有请“用 iPhone 拍摄”</h2>
+                <h2>摄影大赛获奖者。</h2>
+                <span>见证大赛获奖佳作，领略用 iPhone 拍摄的精彩。</span><br>
+                <span><a style="color: white" href="#">进一步了解 > </a>&nbsp;</span>
+            </div>
+        </el-col>
+        <el-col class="show" :xs="24" :sm="24" :md="12" :lg="12">
+            <div style="background:url(image/today.jpg);background-repeat:no-repeat;background-size: auto 100%;" class="background height back">
+                <h2>Today at Apple</h2>
+                <span>免费的创意课程，带你玩转各种自己喜爱的产品</span><br>
+                <span>每一家零售店，每个人都能参加。</span><br>
+                <span><a style="color:black" href="#">看看附近有哪些精彩课程 > </a>&nbsp;</span>
+            </div>
+        </el-col>
+        <el-col class="show" :xs="24" :sm="24" :md="12" :lg="12">
+            <div class="background height">
+                <div style="height: 30%">
+                    <h2>iPad Pro 做得到。</h2>
+                    <span>看看在 iPad 上做起各种事来是多么轻松简单，</span><br>
+                    <span>妙不可言。</span><br>
+                    <span><a href="#">进一步了解 > </a>&nbsp;</a></span>
+                </div>
+                <div style="position:relative;height: 70%">
+                    <div style="width:100%;position:absolute; bottom:0; text-align:center;">
+                        <img style="width: 100%;margin-bottom: 0px" src="image/pro.jpg">
+                    </div>
+                </div>
+            </div>
+        </el-col>
+        <el-col class="show" :xs="24" :sm="24" :md="12" :lg="12">
+            <div style="background:url(image/music.jpg);background-repeat:no-repeat;background-size: auto 100%;color: white" class="background height back">
+                <h1>&nbsp;</h1>
+                <img style="height: 5%" src="image/mus.png"><br>
+                <span>&nbsp;</span><br>
+                <span>上千万首歌曲，敬请沉醉。</span><br>
+                <span><a style="color:white" href="#">免费试用 ></a></span>
+            </div>
+        </el-col>
+        <el-col class="show" :xs="24" :sm="24" :md="12" :lg="12">
+            <div class="background height">
+                <div style="height: 30%">
+                    <h2>AirPods</h2>
+                    <span>无线，无繁琐，只有妙不可言。</span><br>
+                    <span>妙不可言。</span><br>
+                    <span><a href="#">进一步了解 > </a>&nbsp;&nbsp;<a href="#">购买 ></a></span>
+                </div>
+                <div style="height: 70%">
+                    <img style="height: 100%" src="image/AirPods.jpg">
+                </div>
+            </div>
+        </el-col>
+    </el-row>
+    <el-row class="fot">
+        <el-col :xs="0" :sm="2" :md="4" :lg="5"><div>&nbsp;</div></el-col>
+        <el-col :xs="24" :sm="20" :md="16" :lg="14">
+            <div style="width: 100%">
+                <span style="width: 100%">
+                    <br>所示的 iPhone XR 64GB 机型价格是使用 iPhone 7 Plus 32GB 机型进行折抵换购的价格。上述所示机型的分期付款金额是在使用 iPhone 7 Plus 32GB 机型进行折抵后，再以招商银行、中国工商银行或花呗 24 期免息分期付款方式估算得出的整数金额 (未显示小数点以后的金额)，实际支付金额以银行或花呗账单为准。本优惠活动暂定截止日期为 2019 年 3 月 25 日，可能视情况延长。折抵金额仅可在限定时间内使用，并且要求用于购买新 iPhone，以限制条款为准。实际折抵金额取决于设备的状况、配置、制造年份，以及发售国家或地区。此优惠仅适用于在 Apple Store 零售店内进行折抵换购，并不适用于 Apple 在线商店。Apple Store 零售店和 Apple 在线商店的折抵价值可能有所不同。24 期免息分期付款优惠仅限在 Apple Store 零售店购买产品且符合条件的招商银行、中国工商银行或花呗用户，不适用于 Apple 在线商店。银行或花呗可能要求你的可用信用额度大于所购买产品的总金额，才能使用分期付款服务。有关信用卡或花呗分期服务的申请及使用问题，请与银行或花呗联系，Apple 对此不做任何承诺和保证。Apple 的折抵换购活动为 Apple 与 Apple 折抵服务合作伙伴共同推出，年满 18 周岁及以上者才能享受此项折抵换购服务。店内折抵换购需出示政府颁发并附有照片的有效身份证件 (当地法律可能会要求存储该信息)。可能需要遵守 Apple 或 Apple 折抵服务合作伙伴的其他条款。本优惠不能与 Apple 的其他优惠或折扣活动同时使用。如需了解更多免息分期付款信息，请点击此处。
+                    <br>** 仅限新订阅用户。当试用期结束后，会员方案将按月自动续订。
+                </span>
+            </div>
+        </el-col>
+    </el-row>
+</div>
+<script>
+    new Vue({el: '#app'});
+</script>
+</body>
+</html>
